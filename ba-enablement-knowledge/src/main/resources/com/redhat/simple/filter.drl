@@ -1,0 +1,19 @@
+//created on: Sep 1, 2015
+package com.redhat
+
+//list any import classes here.
+//declare any global variables here
+
+rule "Filter From Kansas"
+ruleflow-group "filtering"
+dialect "mvel"
+
+    when
+        $business : Business ($sC : stateCode == ("KS"))
+    then
+        insert ( new String( "filtered" ) );
+		Reason reason = new Reason();
+		reason.setReasonMessage( "business filtered from Kansas" );
+		insert ( reason );
+end
+
