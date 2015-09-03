@@ -9,7 +9,7 @@ ruleflow-group "filtering"
 dialect "mvel"
 
     when
-        $business : Business (stateCode == ("KS"))
+        $business : Business ($sC : stateCode == ("KS"))
     then
         insert ( new String( "filtered" ) );
 		Reason reason = new Reason();

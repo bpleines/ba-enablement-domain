@@ -8,7 +8,7 @@ rule "Validate name"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (name == null);
+        $business : Business ($n : name == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
@@ -20,7 +20,7 @@ rule "Validate addressLine1"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (addressLine1 == null);
+        $business : Business ($a : addressLine1 == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
@@ -32,7 +32,7 @@ rule "Validate addressLine2"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (addressLine2 == null);
+        $business : Business ($a : addressLine2 == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
@@ -44,7 +44,7 @@ rule "Validate phoneNumber"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (phoneNumber == null);
+        $business : Business ($pN : phoneNumber == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
@@ -56,7 +56,7 @@ rule "Validate city"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (city == null);
+        $business : Business ($c : city == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
@@ -68,7 +68,7 @@ rule "Validate stateCode"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (stateCode == null);
+        $business : Business ($sC : stateCode == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
@@ -80,7 +80,7 @@ rule "Validate zipCode"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (zipCode == null);
+        $business : Business ($zC : zipCode == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
@@ -92,7 +92,7 @@ rule "Validate federalTaxId"
 ruleflow-group "validating"
 dialect "mvel"
     when
-        $business : Business (federalTaxId == null);
+        $business : Business ($fTI : federalTaxId == null);
     then
         insert ( new String( "validation error" ) );
 		Reason reason = new Reason();
