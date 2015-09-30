@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- origin at X=0.0 Y=0.0 -->
+<!-- origin at X=-7.0 Y=0.0 -->
 <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:java="http://www.java.com/javaTypes" xmlns:tns="http://www.jboss.org/drools" xmlns="http://www.jboss.org/drools" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" id="Definition" exporter="org.eclipse.bpmn2.modeler.core" exporterVersion="1.1.3.Final" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
   <bpmn2:itemDefinition id="ItemDefinition_2" isCollection="false" structureRef="com.redhat.Business"/>
   <bpmn2:itemDefinition id="ItemDefinition_28" isCollection="false" structureRef="com.redhat.Reason"/>
@@ -120,15 +120,15 @@ kcontext.getKnowledgeRuntime().insert( kcontext.getProcessInstance().getVariable
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_ScriptTask_2" bpmnElement="ScriptTask_2">
-        <dc:Bounds height="50.0" width="110.0" x="348.0" y="228.0"/>
+        <dc:Bounds height="50.0" width="110.0" x="452.0" y="320.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_5" labelStyle="BPMNLabelStyle_1">
-          <dc:Bounds height="28.0" width="90.0" x="358.0" y="239.0"/>
+          <dc:Bounds height="28.0" width="90.0" x="462.0" y="331.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_EndEvent_2" bpmnElement="EndEvent_2">
-        <dc:Bounds height="36.0" width="36.0" x="536.0" y="235.0"/>
+        <dc:Bounds height="36.0" width="36.0" x="641.0" y="327.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_6" labelStyle="BPMNLabelStyle_1">
-          <dc:Bounds height="14.0" width="65.0" x="522.0" y="271.0"/>
+          <dc:Bounds height="14.0" width="65.0" x="627.0" y="363.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_BusinessRuleTask_1" bpmnElement="BusinessRuleTask_1">
@@ -151,19 +151,19 @@ kcontext.getKnowledgeRuntime().insert( kcontext.getProcessInstance().getVariable
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_ExclusiveGateway_2" bpmnElement="ExclusiveGateway_2" isMarkerVisible="true">
         <dc:Bounds height="50.0" width="50.0" x="676.0" y="38.0"/>
-        <bpmndi:BPMNLabel id="BPMNLabel_10" labelStyle="BPMNLabelStyle_1">
+        <bpmndi:BPMNLabel labelStyle="BPMNLabelStyle_1">
           <dc:Bounds height="28.0" width="78.0" x="662.0" y="88.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_ScriptTask_4" bpmnElement="ScriptTask_4">
         <dc:Bounds height="50.0" width="110.0" x="646.0" y="234.0"/>
-        <bpmndi:BPMNLabel id="BPMNLabel_11" labelStyle="BPMNLabelStyle_1">
+        <bpmndi:BPMNLabel labelStyle="BPMNLabelStyle_1">
           <dc:Bounds height="28.0" width="90.0" x="656.0" y="245.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_EndEvent_3" bpmnElement="EndEvent_3">
         <dc:Bounds height="36.0" width="36.0" x="852.0" y="241.0"/>
-        <bpmndi:BPMNLabel id="BPMNLabel_12" labelStyle="BPMNLabelStyle_1">
+        <bpmndi:BPMNLabel labelStyle="BPMNLabelStyle_1">
           <dc:Bounds height="14.0" width="65.0" x="838.0" y="277.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
@@ -175,16 +175,16 @@ kcontext.getKnowledgeRuntime().insert( kcontext.getProcessInstance().getVariable
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_4" bpmnElement="SequenceFlow_4" sourceElement="BPMNShape_ExclusiveGateway_1" targetElement="BPMNShape_ScriptTask_2">
         <di:waypoint xsi:type="dc:Point" x="403.0" y="88.0"/>
-        <di:waypoint xsi:type="dc:Point" x="403.0" y="158.0"/>
-        <di:waypoint xsi:type="dc:Point" x="403.0" y="228.0"/>
+        <di:waypoint xsi:type="dc:Point" x="403.0" y="345.0"/>
+        <di:waypoint xsi:type="dc:Point" x="452.0" y="345.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_10" labelStyle="BPMNLabelStyle_1">
-          <dc:Bounds height="14.0" width="20.0" x="394.0" y="159.0"/>
+          <dc:Bounds height="14.0" width="20.0" x="394.0" y="177.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_5" bpmnElement="SequenceFlow_5" sourceElement="BPMNShape_ScriptTask_2" targetElement="BPMNShape_EndEvent_2">
-        <di:waypoint xsi:type="dc:Point" x="458.0" y="253.0"/>
-        <di:waypoint xsi:type="dc:Point" x="497.0" y="253.0"/>
-        <di:waypoint xsi:type="dc:Point" x="536.0" y="253.0"/>
+        <di:waypoint xsi:type="dc:Point" x="562.0" y="345.0"/>
+        <di:waypoint xsi:type="dc:Point" x="601.0" y="345.0"/>
+        <di:waypoint xsi:type="dc:Point" x="641.0" y="345.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_11" labelStyle="BPMNLabelStyle_1"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_6" bpmnElement="SequenceFlow_6" sourceElement="BPMNShape_ExclusiveGateway_1" targetElement="BPMNShape_BusinessRuleTask_1">
@@ -215,26 +215,26 @@ kcontext.getKnowledgeRuntime().insert( kcontext.getProcessInstance().getVariable
         <di:waypoint xsi:type="dc:Point" x="36.0" y="63.0"/>
         <di:waypoint xsi:type="dc:Point" x="126.0" y="63.0"/>
         <di:waypoint xsi:type="dc:Point" x="217.0" y="63.0"/>
-        <bpmndi:BPMNLabel id="BPMNLabel_16" labelStyle="BPMNLabelStyle_1"/>
+        <bpmndi:BPMNLabel labelStyle="BPMNLabelStyle_1"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_13" bpmnElement="SequenceFlow_13" sourceElement="BPMNShape_ExclusiveGateway_2" targetElement="BPMNShape_ScriptTask_4">
         <di:waypoint xsi:type="dc:Point" x="701.0" y="88.0"/>
         <di:waypoint xsi:type="dc:Point" x="701.0" y="124.0"/>
         <di:waypoint xsi:type="dc:Point" x="701.0" y="124.0"/>
         <di:waypoint xsi:type="dc:Point" x="701.0" y="234.0"/>
-        <bpmndi:BPMNLabel id="BPMNLabel_17" labelStyle="BPMNLabelStyle_1"/>
+        <bpmndi:BPMNLabel labelStyle="BPMNLabelStyle_1"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_14" bpmnElement="SequenceFlow_14" sourceElement="BPMNShape_ScriptTask_4" targetElement="BPMNShape_EndEvent_3">
         <di:waypoint xsi:type="dc:Point" x="756.0" y="259.0"/>
         <di:waypoint xsi:type="dc:Point" x="804.0" y="259.0"/>
         <di:waypoint xsi:type="dc:Point" x="852.0" y="259.0"/>
-        <bpmndi:BPMNLabel id="BPMNLabel_18" labelStyle="BPMNLabelStyle_1"/>
+        <bpmndi:BPMNLabel labelStyle="BPMNLabelStyle_1"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_15" bpmnElement="SequenceFlow_15" sourceElement="BPMNShape_ExclusiveGateway_2" targetElement="BPMNShape_BusinessRuleTask_2">
         <di:waypoint xsi:type="dc:Point" x="726.0" y="63.0"/>
         <di:waypoint xsi:type="dc:Point" x="764.0" y="63.0"/>
         <di:waypoint xsi:type="dc:Point" x="802.0" y="63.0"/>
-        <bpmndi:BPMNLabel id="BPMNLabel_19" labelStyle="BPMNLabelStyle_1"/>
+        <bpmndi:BPMNLabel labelStyle="BPMNLabelStyle_1"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
     <bpmndi:BPMNLabelStyle id="BPMNLabelStyle_1">

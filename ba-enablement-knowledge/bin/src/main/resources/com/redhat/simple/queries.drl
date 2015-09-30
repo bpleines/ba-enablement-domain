@@ -1,0 +1,21 @@
+package com.redhat
+
+import com.redhat.*;
+
+query "Get Business"
+	
+	$business : Business()
+	
+end
+
+query "Get Response Code"
+	
+	$response : String()
+	
+end
+
+query "Get Reason Messages"
+	
+	$reasons : Reason()
+	
+end

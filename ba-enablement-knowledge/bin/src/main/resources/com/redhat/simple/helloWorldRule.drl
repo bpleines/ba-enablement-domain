@@ -1,0 +1,11 @@
+package com.redhat;
+
+rule "Hello World"
+ruleflow-group "greeting"
+dialect "mvel"
+
+	when
+		$greeting : Greeting( greeting == null )
+	then
+		modify ($greeting) { setGreeting("Hello, World!") }
+end

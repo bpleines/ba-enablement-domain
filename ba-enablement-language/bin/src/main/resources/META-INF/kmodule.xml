@@ -1,0 +1,6 @@
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <kbase name="KBase2" default="false" eventProcessingMode="cloud" equalsBehavior="equality" declarativeAgenda="enabled" packages="*">
+    <ksession name="stateful2" type="stateful" default="false" />
+    <ksession name="stateless2" type="stateless" default="false" />
+  </kbase>
+</kmodule>

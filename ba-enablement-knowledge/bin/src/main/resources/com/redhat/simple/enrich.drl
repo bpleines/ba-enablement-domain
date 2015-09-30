@@ -1,0 +1,18 @@
+//created on: Sep 1, 2015
+package com.redhat
+
+//list any import classes here.
+//declare any global variables here
+
+rule "Enrich federalTaxId"
+ruleflow-group "enriching"
+dialect "mvel"
+
+    when
+        $business : Business ($localFederalTaxId : federalTaxId == ("98765"),
+        						$localZipCode : zipCode == ("10002"))
+    then
+    	$business.setFederalTaxId($localFederalTaxId + "-" + $localZipCode);
+        insert ( new String( "enriched" ) );
+end
+
