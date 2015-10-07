@@ -10,9 +10,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<bpms.version>6.2.0.Final-redhat-11</bpms.version>
 	</properties>
-
-
 
 	<dependencies>
 		<dependency>
@@ -22,25 +21,18 @@
 		</dependency>
 	</dependencies>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>deployment</id>
-			<url>http://nexus-rhcbap.rhcloud.com/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.kie</groupId>
 				<artifactId>kie-maven-plugin</artifactId>
-				<version>6.2.0.Final-redhat-9</version>
+				<version>${bpms.version}</version>
 				<extensions>true</extensions>
 				<dependencies>
 					<dependency>
 						<groupId>org.jbpm</groupId>
 						<artifactId>jbpm-bpmn2</artifactId>
-						<version>6.2.0.Final-redhat-9</version>
+						<version>${bpms.version}</version>
 					</dependency>
 				</dependencies>
 			</plugin>
